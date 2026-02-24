@@ -25,17 +25,59 @@ class NewsHeadlineScraper:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
         
-        # RSS feeds and direct sources for Indian news
+        # RSS feeds and direct sources for Indian news - ALL LANGUAGES
         self.news_sources = {
+            # ENGLISH SOURCES
             'Times of India': 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
             'NDTV': 'https://feeds.feedburner.com/ndtvnews-top-stories',
-            'Hindu': 'https://www.thehindu.com/news/national/?service=rss',
+            'The Hindu': 'https://www.thehindu.com/news/national/?service=rss',
             'Indian Express': 'https://indianexpress.com/feed/',
             'News18': 'https://www.news18.com/rss/india.xml',
             'Zee News': 'https://zeenews.india.com/rss/india-national-news.xml',
             'Hindustan Times': 'https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml',
+            'Business Standard': 'https://www.business-standard.com/rss/news.rss',
+            'The Telegraph': 'https://www.telegraphindia.com/feeds/headline.xml',
+            
+            # HINDI SOURCES
             'Dainik Bhaskar (Hindi)': 'https://www.bhaskar.com/rss-feed/1001/',
             'Amar Ujala (Hindi)': 'https://www.amarujala.com/rss/national-news.xml',
+            'Dainik Navajyoti (Hindi)': 'https://navajyoti.me/rss/',
+            'Jagran (Hindi)': 'https://feeds.jagran.com/national',
+            'Nai Duniya (Hindi)': 'https://www.naiduniya.com/rss/',
+            
+            # TAMIL SOURCES
+            'Dinamalar (Tamil)': 'https://www.dinamalar.com/rss/home.xml',
+            'Maalai Malar (Tamil)': 'https://www.maalaimalar.com/feeds/',
+            'Thanthi (Tamil)': 'https://www.thanthi.com/rss/home.xml',
+            
+            # TELUGU SOURCES
+            'Eenadu (Telugu)': 'https://www.eenadu.net/rss/',
+            'Greatandhra (Telugu)': 'https://www.greatandhra.com/rss/',
+            'Sakshi (Telugu)': 'https://www.sakshi.com/rss/',
+            
+            # KANNADA SOURCES
+            'Vijayavani (Kannada)': 'https://vijayavani.com/rss/',
+            'Kannada Prabha (Kannada)': 'https://www.kannadaprabha.com/rss/',
+            
+            # MARATHI SOURCES
+            'Sakal (Marathi)': 'https://www.sakal.com/rss/',
+            'Divya Marathi (Marathi)': 'https://www.divyamarathi.bhaskar.com/rss/',
+            
+            # GUJARATI SOURCES
+            'Divyabhaskar (Gujarati)': 'https://www.divyabhaskar.co.in/rss/',
+            'Gujarat Samachar (Gujarati)': 'https://www.gujaratsamachar.com/rss/',
+            
+            # MALAYALAM SOURCES
+            'Manorama News (Malayalam)': 'https://www.manoramanews.com/feeds/',
+            'Mathrubhumi (Malayalam)': 'https://feeds.mathrubhumi.com/national',
+            
+            # BENGALI SOURCES
+            'Anandabazar (Bengali)': 'https://www.anandabazar.com/feeds/',
+            'Bartaman (Bengali)': 'https://www.bartamansambad.com/rss/',
+            
+            # PUNJABI SOURCES
+            'Punjab Kesari (Punjabi)': 'https://www.punjabkesari.in/rss/',
+            'Jagbani (Punjabi)': 'https://www.jagbani.com/rss/',
         }
         
     def scrape_rss_feed(self, source_name: str, url: str) -> List[Dict]:
