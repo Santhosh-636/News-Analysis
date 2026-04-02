@@ -15,14 +15,14 @@ def main():
     print(" "*20 + "Quick Start")
     print("="*70 + "\n")
     
-    print("🚀 Starting the dashboard...\n")
+    print("Starting the dashboard...\n")
     
     # Get Python executable path
     python_exe = ".venv\\Scripts\\python.exe"
     
     try:
         # Start streamlit
-        print("📊 Launching Streamlit server...")
+        print("Launching Streamlit server...")
         process = subprocess.Popen(
             [python_exe, "-m", "streamlit", "run", "dashboard.py"],
             stdout=subprocess.PIPE,
@@ -32,19 +32,19 @@ def main():
         print("⏳ Waiting for server to start...")
         time.sleep(5)  # Wait for server to start
         
-        print("✓ Streamlit server started!")
+        print("Streamlit server started!")
         print("\n" + "="*70)
-        print("📍 DASHBOARD READY:")
+        print("DASHBOARD READY:")
         print("="*70)
         print("   Local URL: http://localhost:8501")
         print("   Network URL: http://10.39.12.48:8501")
         print("="*70 + "\n")
         
         # Open browser
-        print("🌐 Opening dashboard in your browser...")
+        print(" Opening dashboard in your browser...")
         webbrowser.open("http://localhost:8501")
         
-        print("\n✅ Dashboard is now running!")
+        print("\n Dashboard is now running!")
         print("   The dashboard will remain active until you close this terminal.")
         print("   Press Ctrl+C to stop the server.\n")
         
@@ -52,16 +52,16 @@ def main():
         process.wait()
         
     except FileNotFoundError:
-        print("❌ Error: Python executable not found.")
+        print("Error: Python executable not found.")
         print("   Make sure you're running this from the project directory.")
         sys.exit(1)
     except KeyboardInterrupt:
-        print("\n\n🛑 Shutting down dashboard...")
+        print("\n\nShutting down dashboard...")
         process.terminate()
         process.wait()
         print("✓ Dashboard stopped.")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

@@ -420,8 +420,8 @@ def create_sentiment_distribution_chart(df):
         showlegend=True,
         title_font_size=16,
         title_x=0.5,
-        font=dict(size=12, family="Arial", color='#e8eef7'),
-        title_font_color='#4ECDC4',
+        font=dict(size=12, family="Arial", color='#ffffff'),
+        title_font_color="#F9F9F9",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
     )
@@ -467,8 +467,8 @@ def create_emotion_distribution_chart(df):
         title_font_size=16,
         title_x=0.5,
         xaxis_tickangle=-45,
-        font=dict(size=11, family="Arial", color='#e8eef7'),
-        title_font_color='#4ECDC4',
+        font=dict(size=11, family="Arial", color='#ffffff'),
+        title_font_color="#FFFFFF",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
     )
@@ -508,8 +508,8 @@ def create_source_sentiment_chart(df):
         xaxis_tickangle=-45,
         title_font_size=16,
         title_x=0.5,
-        font=dict(size=10, family="Arial", color='#e8eef7'),
-        title_font_color='#4ECDC4',
+        font=dict(size=10, family="Arial", color='#ffffff'),
+        title_font_color="#FFFFFF",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         showlegend=True
@@ -545,12 +545,12 @@ def create_sentiment_score_distribution(df):
         height=450,
         title_font_size=16,
         title_x=0.5,
-        font=dict(size=11, family="Arial", color='#e8eef7'),
-        title_font_color='#4ECDC4',
+        font=dict(size=11, family="Arial", color='#ffffff'),
+        title_font_color="#FFFFFF",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
     )
-    
+
     return fig
 
 def create_language_distribution_chart(df):
@@ -577,8 +577,8 @@ def create_language_distribution_chart(df):
         title_font_size=16,
         title_x=0.5,
         xaxis_tickangle=-45,
-        font=dict(size=11, family="Arial", color='#e8eef7'),
-        title_font_color='#4ECDC4',
+        font=dict(size=11, family="Arial", color='#ffffff'),
+        title_font_color="#FFFFFF",
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
     )

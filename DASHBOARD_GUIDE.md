@@ -1,7 +1,10 @@
 # 📰 Dashboard User Guide
 
 ## Getting Started
-
+python news_scraper.py
+python sentiment_analyzer.py
+python test_system.py
+python -m streamlit run dashboard.py
 ### Option 1: Using Quick Start (Easiest)
 ```bash
 python quickstart.py
